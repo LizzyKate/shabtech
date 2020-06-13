@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.ban{
+    min-height: 80vh;
+}
+.shap{
+    padding-top: 3rem;
+}
+.list a, .tweet div, .what{
+    font-size: 12px;
+    font-family: 'Raleway';
+    font-weight: lighter;
+}
+.humans{
+    padding-left: 3rem;
+}
+.humans h1{
+    margin-top: 9rem;
+    font-family: 'Raleway';
+    font-weight: bolder;
+}
+.modify{
+    position: relative;
+}
+.us{
+    top: 60px;
+    left: 80px;
+    text-decoration: none !important;
+    font-family: 'Raleway';
+    font-weight: bold;
+    position: absolute;
+}
+.tweet{
+    right: 0;
+    top: 280px;
+    transform: rotate(90deg);
+    display: flex ;
+}
+.linear{
+    transform: rotate(90deg);
+    top: 500px;
+    left: 60px;
+    font-size: 18px;
+    font-family: 'MuseoModerno';
+}
+.line{
+    position: absolute;
+    border-top: 1px solid white;
+    width: 100px;
+    transform: rotate(90deg);
+    margin-left: 28px;
+    top: 595px;
+}
+.item{
+    display: flex;
+    margin-top: 5rem;
+}
+.shift{
+    margin-top: -35px;
+}
+.build, .bel{
+    font-size: 9px;
+    font-family: 'Poppins';
+    font-weight: lighter;
+}
+.soft{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.we, .winner{
+    top: 115px;
+    left: 105px;
+    font-size: 30px;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+.tech p{
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: bolder;
+}
+.content{
+    width: 370px;
+}
+.provide{
+    width: 50%;
+}
+.custom{
+    height: 300px;
+    border: none;
+    box-shadow: 0px 3px 6px #00000029;
+    margin-left: 3rem;
+}
+.web{
+    width: 100px;
+}
+.word{
+    width: 75%;
+    font-size: 15px;
+    font-family: 'Raleway';
+}
+.press{
+    font-size: 13px;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+.explain{
+    height: 400px;
+    border: none;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.plain{
+    height: 400px;
+    border: none;
+    right: 20px;
+    bottom: 20px;
+}
+.prof{
+    margin-top: 6rem;
+}
+.sion{
+    width: 40% !important;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 13px;
+}
+.koko{
+    margin-left: 10rem;
+}
+.face{
+    width: 60px;
+    height: 60px;
+}
+.nengi{
+    font-size: 11px;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+.increase{
+    font-size: 40px;
+}
+.solve{
+    font-size: 30px;
+    font-family: 'Raleway';
+    font-weight: 600;
+}
+.get{
+    left: 80px;
+    top: 65px;
+    font-size: 30px;
+    font-family: 'Raleway';
+}
+@media screen and (max-width: 700px){
+    .winner{
+        left: 110px !important;
+        top: 95px !important;
+    }
+    .we{
+        left: 140px !important;
+    }
+}
+@media screen and (max-width: 1200px){
+    .ban{
+        min-height: 0 !important;
+    }
+    .shab{
+        padding-top: 1rem !important;
+    }
+    .shab a{
+        padding-left: 0 !important;
+    }
+    .humans{
+        padding-left: 0 !important;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .humans h1{
+        margin-top: 1rem !important;
+    }
+    .cont{
+        display: none !important;
+    }
+    .modify{
+        position: initial !important;
+        margin-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .us{
+        position: initial !important;
+        top: 0;
+        left: 0;
+    }
+    .tweet{
+        display: none !important;
+    }
+    .hide{
+        display: none !important;
+    }
+    .item{
+        display: none !important;
+    }
+    .soft{
+        display: inline;
+    }
+    .providing{
+        width: 100% !important;
+        text-align: center;
+    }
+    .provide{
+        width: 100% !important;
+        text-align: center;
+    }
+    .winner{
+        top: 95px;
+        left: 380px;
+    }
+    .we{
+        top: 95px;
+        left: 441px;
+        font-size: 25px;
+    }
+    .custom{
+        margin-left: 0 !important;
+        margin-top: 3rem !important;
+    }
+    .adjust{
+        align-items: center !important;
+    }
+    .word{
+        text-align: center;
+    }
+    .que{
+        display: none;
+    }
+    .appear{
+        display: none !important;
+    }
+}
