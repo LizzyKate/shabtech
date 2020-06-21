@@ -7,10 +7,10 @@
 .us, .get{
     color: #F05234 !important;
 }
-.we{
+.we, .news{
     color: #0B1C1A;
 }
-.tech p, .word, .press{
+.tech p, .word, .wor, .press, .lo{
     color: #213533;
 }
 .serve{
@@ -27,4 +27,10 @@
 }
 .increase{
     color: #F05234;
+}
+.details{
+    background-color: #FFFFFF;
+}
+.lorem{
+    color: #0D1724;
 }

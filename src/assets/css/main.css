@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 .ban{
-    min-height: 80vh;
+    min-height: 100vh;
 }
 .shap{
     padding-top: 3rem;
@@ -102,6 +102,10 @@
     font-size: 15px;
     font-family: 'Raleway';
 }
+.wor{
+    font-size: 15px;
+    font-family: 'Raleway';
+}
 .press{
     font-size: 13px;
     font-family: 'Poppins';
@@ -153,6 +157,30 @@
     font-size: 30px;
     font-family: 'Raleway';
 }
+.blog{
+    width: 65%;
+}
+.news{
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+.details{
+    height: 600px;
+    box-shadow:  0px 3px 6px #00000029;
+    margin-left: 3rem;
+}
+.lorem{
+    font-family: 'Raleway';
+    font-size: 17px;
+    font-weight: bold;
+}
+.lo{
+    font-family: 'Raleway';
+    font-size: 15px;
+}
+.learn{
+    cursor: pointer;
+}
 @media screen and (max-width: 700px){
     .winner{
         left: 110px !important;
@@ -160,6 +188,26 @@
     }
     .we{
         left: 140px !important;
+    }
+    .solve{
+       font-size: 20px; 
+    }
+    .block{
+        display: block !important;
+    }
+    .details{
+        margin-left: 0 !important;
+        margin-top: 3rem !important;
+        height: 640px !important;
+    }
+    .blog{
+        width: 100% !important;
+    }
+    .wor{
+        text-align: center;
+    }
+    .news{
+        text-align: center;
     }
 }
 @media screen and (max-width: 1200px){
@@ -237,5 +285,14 @@
     }
     .appear{
         display: none !important;
+    }
+    .blog{
+        width: 100% !important;
+    }
+    .wor{
+        text-align: center;
+    }
+    .news{
+        text-align: center;
     }
 }
