@@ -41,10 +41,10 @@
     </div>
     <div class="position-absolute flex-row bd-highlight tweet">
       <div class="p-2 bd-highlight">
-        <a href="#">Twitter</a>
+        <a href="#" class="text-white">Twitter</a>
       </div>
       <div class="p-2 bd-highlight ml-4">
-        <a href="#">Facebook</a>
+        <a href="#" class="text-white">Facebook</a>
       </div>
     </div>
     <div class="hide">

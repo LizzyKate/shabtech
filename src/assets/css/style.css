@@ -1,4 +1,4 @@
-.ban{
+.ban, .foot{
     background-color: #0D1724;
 }
 .list a, .humans, .tweet, .linear, .what, .build, .sion, .nengi, .bel{
@@ -33,4 +33,7 @@
 }
 .lorem{
     color: #0D1724;
+}
+.ment{
+    color: #ECEEFD;
 }

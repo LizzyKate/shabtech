@@ -6,6 +6,7 @@
       <explain/>
       <solve/>
       <blog/>
+      <foot/>
   </div>
 </template>
 
@@ -17,6 +18,7 @@ import serve from '../components/service';
 import explain from '../components/explain';
 import solve from '../components/solve';
 import blog from '../components/blog';
+import foot from '../components/footer';
 
 export default {
   components:{
@@ -25,7 +27,8 @@ export default {
       serve,
       explain,
       solve,
-      blog
+      blog,
+      foot
   }
 }
 </script>

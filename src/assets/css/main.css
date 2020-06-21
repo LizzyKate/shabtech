@@ -38,6 +38,9 @@
     transform: rotate(90deg);
     display: flex ;
 }
+.tweet a{
+    text-decoration: none !important;
+}
 .linear{
     transform: rotate(90deg);
     top: 500px;
@@ -102,7 +105,7 @@
     font-size: 15px;
     font-family: 'Raleway';
 }
-.wor{
+.wor, .lo{
     font-size: 15px;
     font-family: 'Raleway';
 }
@@ -174,12 +177,28 @@
     font-size: 17px;
     font-weight: bold;
 }
-.lo{
-    font-family: 'Raleway';
-    font-size: 15px;
-}
 .learn{
     cursor: pointer;
+}
+.gap{
+    padding: 3rem;
+}
+.change{
+    display: flex;
+}
+.bless{
+    width: 130px;
+}
+.ment{
+    font-family: 'Raleway';
+    font-size: 12px;
+}
+.del div{
+    padding: 0.5rem;
+}
+.leng{
+    height: 1px;
+    border: 1px solid #ffffff47;
 }
 @media screen and (max-width: 700px){
     .winner{
@@ -294,5 +313,14 @@
     }
     .news{
         text-align: center;
+    }
+    .gap{
+        padding: 1rem;
+    }
+    .change{
+        display: block !important;
+    }
+    .del div{
+        padding: 0;
     }
 }
