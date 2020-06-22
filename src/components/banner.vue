@@ -29,14 +29,16 @@
         </ul>
       </div>
     </nav>
-    <div class="humans">
-      <h1>
-        Made By Humans
-        <br />powered by WordPress
-      </h1>
-      <div class="modify">
-        <img src="/img/Mask Group 9.svg" class="cont" alt />
-        <a href="tel:+2348063365591" class="us">Contact Us</a>
+    <div data-aos="fade-down-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+      <div class="humans">
+        <h1>
+          Made By Humans
+          <br />powered by WordPress
+        </h1>
+        <div class="modify">
+          <img src="/img/Mask Group 9.svg" class="cont" alt />
+          <a href="tel:+2348063365591" class="us">Contact Us</a>
+        </div>
       </div>
     </div>
     <div class="position-absolute flex-row bd-highlight tweet">
@@ -58,13 +60,15 @@
           <div class="container">
             <div class="row">
               <div class="col-sm" v-for="(done, i) in service" :key="i">
-                <div class="d-flex flex-row justify-content-between align-items-center">
-                  <div class="bd-highlight shift">
-                    <img :src="`/img/${done.image}`" alt />
-                  </div>
-                  <div class="ml-4 d-flex flex-column bd-highlight">
-                    <div class="bd-highlight what">{{done.head}}</div>
-                    <div class="bd-highlight build w-50">{{done.text}}</div>
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+                  <div class="d-flex flex-row justify-content-between align-items-center">
+                    <div class="bd-highlight shift">
+                      <img :src="`/img/${done.image}`" alt />
+                    </div>
+                    <div class="ml-4 d-flex flex-column bd-highlight">
+                      <div class="bd-highlight what">{{done.head}}</div>
+                      <div class="bd-highlight build w-50">{{done.text}}</div>
+                    </div>
                   </div>
                 </div>
               </div>

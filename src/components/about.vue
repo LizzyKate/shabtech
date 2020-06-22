@@ -1,4 +1,5 @@
 <template>
+<div data-aos="flip-up" data-aos-duration="3000">
   <div class="container py-5">
     <div class="soft mx-auto">
       <div class="col">
@@ -17,6 +18,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>

@@ -1,4 +1,5 @@
 <template>
+<div data-aos="zoom-in" data-aos-duration="3000" data-aos-easing="ease-out-cubic">
   <div class="serve" id="work">
     <div class="mx-auto mt-5 position-relative provide">
       <img src="/img/Mask Group 8.svg" alt />
@@ -18,6 +19,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
