@@ -192,9 +192,16 @@
 .ment{
     font-family: 'Raleway';
     font-size: 12px;
+    text-decoration: none;
+}
+.ment:hover{
+    text-decoration: none !important;
 }
 .del div{
     padding: 0.5rem;
+}
+.hand{
+    cursor: pointer;
 }
 .leng{
     height: 1px;

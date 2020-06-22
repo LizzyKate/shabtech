@@ -37,3 +37,6 @@
 .ment{
     color: #ECEEFD;
 }
+.ment:hover{
+    color: #ECEEFD !important;
+}

@@ -18,13 +18,13 @@
       <div class="collapse navbar-collapse pr-5" id="navbarSupportedContent-4">
         <ul class="navbar-nav ml-auto list">
           <li class="nav-item">
-            <a class="nav-link" href="#">Works</a>
+            <a href="#work" class="nav-link go">Works</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blogs</a>
+            <a class="nav-link" href="#blog">Blogs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Say Hello</a>
+            <a class="nav-link" href="#contact">Say Hello</a>
           </li>
         </ul>
       </div>
@@ -36,15 +36,15 @@
       </h1>
       <div class="modify">
         <img src="/img/Mask Group 9.svg" class="cont" alt />
-        <a href="#" class="us">Contact Us</a>
+        <a href="tel:+2348063365591" class="us">Contact Us</a>
       </div>
     </div>
     <div class="position-absolute flex-row bd-highlight tweet">
       <div class="p-2 bd-highlight">
-        <a href="#" class="text-white">Twitter</a>
+        <a href="https://twitter.com/ElizabethOnyen6" class="text-white">Twitter</a>
       </div>
       <div class="p-2 bd-highlight ml-4">
-        <a href="#" class="text-white">Facebook</a>
+        <a href="https://www.facebook.com/elizabeth.onyenekwe" class="text-white">Facebook</a>
       </div>
     </div>
     <div class="hide">
@@ -57,38 +57,14 @@
         <div class="p-2 bd-highlight">
           <div class="container">
             <div class="row">
-              <div class="col-sm">
+              <div class="col-sm" v-for="(done, i) in service" :key="i">
                 <div class="d-flex flex-row justify-content-between align-items-center">
                   <div class="bd-highlight shift">
-                    <img src="/img/Loader.svg" alt />
+                    <img :src="`/img/${done.image}`" alt />
                   </div>
                   <div class="ml-4 d-flex flex-column bd-highlight">
-                    <div class="bd-highlight what">What we do</div>
-                    <div
-                      class="bd-highlight build w-50"
-                    >We build product that solve real problems & focusing on the labour market.</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="d-flex flex-row justify-content-between align-items-center">
-                  <div class="bd-highlight shift">
-                    <img src="/img/Loader2.svg" alt />
-                  </div>
-                  <div class="d-flex flex-column bd-highlight">
-                    <div class="bd-highlight what">Implement Next</div>
-                    <div class="bd-highlight build w-50">Technologies that open gates to your mind</div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="d-flex flex-row justify-content-between align-items-center">
-                  <div class="bd-highlight shift">
-                    <img src="/img/Loader3.svg" alt />
-                  </div>
-                  <div class="d-flex flex-column bd-highlight">
-                    <div class="bd-highlight what">Constitution</div>
-                    <div class="bd-highlight build w-50">Open discussion about new trends</div>
+                    <div class="bd-highlight what">{{done.head}}</div>
+                    <div class="bd-highlight build w-50">{{done.text}}</div>
                   </div>
                 </div>
               </div>
@@ -101,7 +77,30 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      service: [
+        {
+          image: "Loader.svg",
+          head: "What we do",
+          text:
+            "We build product that solve real problems & focusing on the labour market."
+        },
+        {
+          image: "Loader2.svg",
+          head: "Implement Next",
+          text: "Technologies that open gates to your mind"
+        },
+        {
+          image: "Loader3.svg",
+          head: "Constitution",
+          text: "Open discussion about new trends"
+        }
+      ]
+    };
+  }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

@@ -1,5 +1,5 @@
 <template>
-<div class="mt-5 foot">
+<div class="mt-5 foot" id="contact">
   <div class=" gap">
     <div class="flex-row bd-highlight mb-3 justify-content-between change">
       <div class="p-2 bd-highlight">
@@ -20,57 +20,13 @@
       </div>
       <div class="p-2 bd-highlight">
         <div class="d-flex flex-row bd-highlight del">
-          <div class=" bd-highlight">
+          <div class=" bd-highlight ml-5" v-for="(check, i) in foot" :key="i">
             <div class="d-flex flex-column bd-highlight">
               <div class="bd-highlight mb-4">
-                <h6 class="text-white">Useful Links</h6>
+                <h6 class="text-white">{{check.head}}</h6>
               </div>
               <div class="bd-highlight">
-                <p class="ment">About Us</p>
-              </div>
-              <div class="bd-highlight">
-                <p class="ment">Service</p>
-              </div>
-              <div class="bd-highlight">
-                <p class="ment">News & Blog</p>
-              </div>
-            </div>
-          </div>
-          <div class=" bd-highlight ml-5">
-            <div class="d-flex flex-column bd-highlight">
-              <div class="bd-highlight mb-4">
-                <h6 class="text-white">Services</h6>
-              </div>
-              <div class="bd-highlight">
-                <p class="ment">Web Design</p>
-              </div>
-              <div class="bd-highlight">
-                <p class="ment">Web Application</p>
-              </div>
-              <div class="bd-highlight">
-                <p class="ment">Mobile Application</p>
-              </div>
-              <div class="bd-highlight">
-                <p class="ment">Web Development</p>
-              </div>
-            </div>
-          </div>
-          <div class=" bd-highlight ml-5">
-            <div class="d-flex flex-column bd-highlight">
-              <div class="bd-highlight mb-4">
-                <h6 class="text-white">Support</h6>
-              </div>
-              <div class="bd-highlight">
-                <p class="ment">Contact</p>
-              </div>
-              <div class="bd-highlight">
-                <p class="ment">Privacy Policy</p>
-              </div>
-              <div class="bd-highlight">
-                <p class="ment">Terms Of Service</p>
-              </div>
-              <div class="bd-highlight">
-                <p class="ment">Sitemap</p>
+                <p class="ment" v-for="(done, d) in check.detail" :key="d">{{done}}</p>
               </div>
             </div>
           </div>
@@ -80,21 +36,25 @@
     <div class="d-flex flex-row bd-highlight mb-3 justify-content-between">
       <div class="p-2 bd-highlight">
         <h6 class="text-white">Contact Info</h6>
-        <p class="ment">
-          08063365591
-          <br />info@shabtech.com
-        </p>
+        <a href="tel:+2348063365591" class="ment">O8063365591</a><br>
+        <a href="mailto:info@shabtech.com" class="ment">info@shabtech.com</a>
       </div>
       <div class="p-2 bd-highlight">
         <div class="d-flex flex-row bd-highlight">
-          <div class=" bd-highlight">
+          <div class=" bd-highlight hand">
+            <a href="https://twitter.com/ElizabethOnyen6">
               <i class="fab fa-twitter text-white"></i>
+            </a>
           </div>
           <div class="ml-3 bd-highlight">
+            <a href="">
               <i class="fab fa-facebook-f text-white"></i>
+            </a>
           </div>
           <div class="ml-3 bd-highlight">
+            <a href="https://www.facebook.com/elizabeth.onyenekwe">
               <i class="fab fa-instagram text-white"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -106,7 +66,26 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data(){
+    return {
+      foot:[
+        {
+          head:'Useful Links',
+          detail:['About Us', 'Service', 'News & Blog']
+        },
+        {
+          head:'Services',
+          detail:['Web Design', 'Web Application', 'Mobile Application', 'Web Development']
+        },
+        {
+          head:'Support',
+          detail:['Contact', 'Privacy Policy', 'Terms Of Service', 'Sitemap']
+        }
+      ]
+    }
+  }
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
