@@ -189,6 +189,9 @@
 .bless{
     width: 130px;
 }
+.back{
+    margin-left: 3rem;
+}
 .ment{
     font-family: 'Raleway';
     font-size: 12px;
@@ -329,5 +332,8 @@
     }
     .del div{
         padding: 0;
+    }
+    .back{
+        margin-left: 1rem;
     }
 }

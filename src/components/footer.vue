@@ -20,7 +20,7 @@
       </div>
       <div class="p-2 bd-highlight">
         <div class="d-flex flex-row bd-highlight del">
-          <div class=" bd-highlight ml-5" v-for="(check, i) in foot" :key="i">
+          <div class=" bd-highlight back" v-for="(check, i) in foot" :key="i">
             <div class="d-flex flex-column bd-highlight">
               <div class="bd-highlight mb-4">
                 <h6 class="text-white">{{check.head}}</h6>
